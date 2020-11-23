@@ -45,7 +45,7 @@ class ConstantContact extends AbstractProvider
 
     public function getDefaultScopes()
     {
-        return ['account_read','contact_data','campaign_data'];
+        return [];
     }
 
     public function checkResponse(ResponseInterface $response, $data)
