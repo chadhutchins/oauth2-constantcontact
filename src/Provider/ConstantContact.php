@@ -30,12 +30,12 @@ class ConstantContact extends AbstractProvider
 
     public function getBaseAuthorizationUrl()
     {
-        return 'https://api.cc.email/v3/idfed';
+        return 'https://authz.constantcontact.com/oauth2/default/v1/authorize';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://idfed.constantcontact.com/as/token.oauth2';
+        return 'https://authz.constantcontact.com/oauth2/default/v1/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
